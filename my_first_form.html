@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Form</title>
+</head>
+<body>
+<h2>User Login</h2>
+<form method="POST" action="http://requestb.in/1nsow7c1">
+    <p>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Username">
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Password">
+    </p>
+    <p>
+        <button type="submit">Login</button>
+    </p>
+</form>
+<h2>Compose an Email</h2>
+<form method="POST" action="http://requestb.in/1nsow7c1">
+    <p>
+        <input type="checkbox" id="save" name="save" value="yes" checked>
+        <label for="save">Would you like to save a copy to your sent folder?</label>
+    </p>
+    <p>
+        <label for="to">To</label>
+        <input type="text" id="to" name="to" placeholder="To">
+    </p>
+    <p>
+        <label for="from">From</label>
+        <input type="text" id="from" name="from" placeholder="From">
+    </p>
+    <p>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+    </p>
+    <p>
+        <label for="body">Body</label>
+        <input type="text" id="body" name="body" placeholder="Body">
+    </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+    </form>
+    <h2>Multiple Choice Test</h2>
+    <form method="POST" action="http://requestb.in/1nsow7c1">
+        <p>What color is the sky?</p>
+        <label>
+            <input type="radio" name="q1" value="blue">
+            Blue
+        </label>
+        <label>
+            <input type="radio" name="q1" value="green">
+            Green
+        </label>
+        <label>
+            <input type="radio" name="q1" value="orange">
+            Orange
+        </label>
+        <label>
+            <input type="radio" name="q1" value="white">
+            White
+        </label>
+        <p>What is the meaning of life?</p>
+        <label>
+            <input type="radio" name="q2" value="happiness">
+            Happiness
+        </label>
+        <label>
+            <input type="radio" name="q2" value="purpose">
+            Purpose
+        </label>
+        <label>
+            <input type="radio" name="q2" value="42">
+            42
+        </label>
+        <label>
+            <input type="radio" name="q2" value="kindness">
+            Kindness
+        </label>
+        <br>
+        <p>What state are you in currently?</p>
+        <label><input type="checkbox" id="st1" name="st[]" value="Colorado"> Colorado</label>
+        <label><input type="checkbox" id="st2" name="st[]" value="Texas"> Texas</label>
+        <label><input type="checkbox" id="st3" name="st[]" value="Arkansas"> Arkansas</label>
+        <br>
+        <br>
+        <label for="alive">Are you alive right now? </label>
+        <select id="alive" name="alive">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+        </select>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+        <h2>Select Testing</h2>
+        <form method="POST" action="http://requestb.in/1nsow7c1">
+            <label for="chocolate">Do you like chocolate? </label>
+            <select id="chocolate" name="chocolate">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+</body>
+</html>

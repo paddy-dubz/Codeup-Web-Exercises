@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /* Remove margins and padding from the list, and add a black background color */
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Float the list items side by side */
+        ul.topnav li {float: left;}
+
+        /* Style the links inside the list items */
+        ul.topnav li a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of links on hover */
+        ul.topnav li a:hover {background-color: #555;}
+
+        /* Hide the list item that contains the link that should open and close the topnav on small screens */
+        ul.topnav li.icon {display: none;}
+
+        #main {
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 5px black;
+            border: 1px solid transparent;
+            height: auto;
+            background-image: url("http://www.goliath.com/wp-content/uploads/2015/09/office-space-stephen-root-as-milton.png");
+            background-position: center;
+            background-attachment: fixed;
+            background-position-y: 5%;
+            background-repeat: no-repeat;
+            max-width: 1800px;
+        }
+
+        #body {
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 1%;
+            text-align: left;
+            height: auto;
+            white-space: normal;
+            overflow: auto;
+        }
+
+        #leftside   {
+            float: left;
+            width: 70%;
+            white-space: normal;
+            border: 1px solid transparent;
+        }
+
+        #footer {
+            text-align: center;
+            height: auto;
+            border: 1px solid transparent;
+            background-image: url("http://www.goliath.com/wp-content/uploads/2015/09/office-space-stephen-root-as-milton.png");
+            background-position: center;
+            background-attachment: fixed;
+            background-position-y: 5%;
+            background-repeat: no-repeat;
+        }
+
+        #rightside h1 {
+            color: red;
+        }
+
+        #rightside {
+            float: right;
+            width: 28%;
+            white-space: normal;
+        }
+
+
+
+        @media (min-width: 480px)
+        {
+            body
+            {
+                font-size: 1.5vw;
+            }
+            h1
+            {
+                font-size: 3vw;
+            }
+            .topnav
+            {
+                font-size: 1vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<ul class="topnav" id="myTopnav">
+    <li><a>Welcome</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+    </li>
+</ul>
+<div id="main">
+    <h1>Let's Get to the <font color="red">Root</font> of this Country's Problems</h1>
+    <form method="POST" action="http://requestb.in/1nsow7c1">
+
+        <label for="email"></label>
+        <input placeholder="Email Address" id="email" name="email" type="text">
+
+        <label for="zip_code"></label>
+        <input placeholder="Zip Code" id="zip_code" name="zip_code" type="text">
+
+        <label for="state"></label>
+        <select id="state" name="state[]">
+            <option selected value="texas">Texas</option>
+            <option value="colorado">Colorado</option>
+            <option value="mars">Mars</option>
+
+            <p>
+                <input type="submit">
+            </p>
+
+    </form>
+</div>
+
+<div id="body">
+    <div id="leftside">
+        <h1>Uniting the Nation with his Swingline</h1>
+        <p>
+            I know words. I have the best words. When other websites give you text, they’re not sending the best. They’re not sending you, they’re sending words that have lots of problems and they’re bringing those problems with us. They’re bringing mistakes. They’re bringing misspellings. They’re typists… And some, I assume, are good words. He’s not a word hero. He’s a word hero because he was captured. I like text that wasn’t captured. I think my strongest asset maybe by far is my temperament. I have a placeholding temperament.<br><br>
+            Trump Ipsum is calling for a total and complete shutdown of Muslim text entering your website. An 'extremely credible source' has called my office and told me that Lorem Ipsum's birth certificate is a fraud. We are going to make placeholder text great again. Greater than ever before. You could see there was text coming out of her eyes, text coming out of her wherever. I’m the best thing that ever happened to placeholder text.<br><br>
+            You’re disgusting. You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. You're telling the enemy exactly what you're going to do. No wonder you've been fighting Lorem Ipsum your entire adult life. I think the only difference between me and the other placeholder text is that I’m more honest and my words are more beautiful.
+        </p>
+    </div>
+
+    <div id="rightside">
+        <h1>News</h1>
+        <p>
+            Lorem Ispum is a choke artist. It chokes! The concept of Lorem Ipsum was created by and for the Chinese in order to make U.S. design jobs non-competitive.
+            <br><br>
+            My placeholder text, I think, is going to end up being very good with women. Look at these words. Are they small words? And he referred to my words - if they're small, something else must be small. I guarantee you there's no problem, I guarantee. Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision.
+        </p>
+        <p>
+            <a href="">More</a>
+        </p>
+    </div>
+</div>
+<div id="footer">
+    <h1>This is just a test. Please ignore, or don't--it doesn't matter.</h1>
+</div>
+</body>
+</html>

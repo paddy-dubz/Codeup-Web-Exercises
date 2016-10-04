@@ -1,0 +1,166 @@
+/* Background */
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One';
+
+html {
+    background-image: url(../img/bg.jpg);
+}
+/* Navigation bar*/
+nav {
+    margin-left: 9%;
+    margin-right: 9%;
+
+}
+#purpose {
+    float: left;
+
+    font-family: 'Fjalla One', sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin-left: 0%;
+    padding: 0;
+    overflow: auto;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+li {
+    float: left;
+}
+li a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+
+
+
+#main {
+    margin-left: 9%;
+    margin-right: 9%;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    border: 1px solid transparent;
+    clear: both;
+    height: auto;
+    background-image: url("http://www.goliath.com/wp-content/uploads/2015/09/office-space-stephen-root-as-milton.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 5%;
+    background-repeat: no-repeat;
+}
+
+#body {
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 1%;
+    text-align: left;
+    height: auto;
+    white-space: normal;
+    overflow: auto;
+}
+
+#leftside {
+    float: left;
+    width: 70%;
+    border: 1px solid transparent;
+    background-image: url("http://www.goliath.com/wp-content/uploads/2015/09/office-space-stephen-root-as-milton.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 5%;
+    background-repeat: no-repeat;
+    white-space: normal;
+}
+#rightside {
+    width: 25%;
+    border: 1px transparent;
+    background-image: url("http://www.goliath.com/wp-content/uploads/2015/09/office-space-stephen-root-as-milton.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 5%;
+    background-repeat: no-repeat;
+    white-space: normal;
+}
+#rightside img {
+    opacity: .5;
+}
+#body h1 {
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+#body h2 {
+    color: red;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+#body p {
+    margin: 2%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#footer {
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    border: 1px solid transparent;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 1%;
+    background-image: url("http://www.goliath.com/wp-content/uploads/2015/09/office-space-stephen-root-as-milton.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 5%;
+    background-repeat: no-repeat;
+}
+#copy {
+    text-align: center;
+}
+@media (min-width: 1200px)
+{
+    #rightside
+    {
+        float: right;
+        display: block;
+
+    }
+}
+@media (min-width: 300px)
+{
+
+    nav
+    {
+        font-size: 1.3vw;
+    }
+
+    #main
+    {
+        font-size: 1.5vw;
+    }
+
+    #body
+    {
+        font-size: 1.3vw;
+    }
+
+    #footer
+    {
+        font-size: 1.3vw;
+    }
+
+    #input
+    {
+        width: 100vw;
+    }
+
+
+
+
+}

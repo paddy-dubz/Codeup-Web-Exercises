@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning Exercise</title>
+    <style>
+        .ribbon {
+            float: right;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, 1);
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+            margin-top: 50px;
+            margin-right: 50px;
+            padding: 10px;
+            float: left;
+            position: relative;
+        }
+
+        .box>img{
+            position: absolute;
+            top: -40px;
+            right: -40px;
+        }
+
+        .header{
+            position: relative;
+            top: 23px;
+        }
+
+        #red {
+            background: red;
+        }
+
+        #orange {
+            background: orange;
+        }
+
+        #yellow {
+            background: yellow;
+        }
+
+        #green {
+            background: green;
+            clear: both;
+        }
+
+        #blue {
+            background: blue;
+        }
+
+        #purple {
+            background: purple;
+        }
+    </style>
+</head>
+    <body>
+        <div class="ribbon"><img src="img/codeup-ribbon.png"></div>
+        <div class="header"><h1><a href="https://en.wikipedia.org/wiki/Visible_spectrum" target="_blank">Visible Spectrum Wavelengths</a></h1></div>
+        <div class="box" id="red"><img src="img/codeup-arrow.png">620-750 nm</div>
+        <div class="box" id="orange"><img src="img/codeup-arrow.png">590-620 nm</div>
+        <div class="box" id="yellow"><img src="img/codeup-arrow.png">670-590 nm</div>
+        <div class="box" id="green"><img src="img/codeup-arrow.png">495-570 nm</div>
+        <div class="box" id="blue"><img src="img/codeup-arrow.png">450-495 nm</div>
+        <div class="box" id="purple"><img src="img/codeup-arrow.png">380-450 nm</div>
+    </body>
+</html>

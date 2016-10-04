@@ -1,0 +1,38 @@
+.box {
+    width: 172px;
+    height: 72px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    font-weight: bold;
+    color: white;
+    padding: 10px 0px 0px 10px;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background: orange;
+    margin: 10px 30px;
+}
+
+.yellow {
+    background: yellow;
+    margin: 10px 60px;
+}
+
+.green {
+    background: green;
+    margin: 10px 90px;
+}
+
+.blue {
+    background: blue;
+    margin: 10px 120px;
+}
+
+.purple {
+    background: purple;
+    margin: 10px 150px;
+}
+
