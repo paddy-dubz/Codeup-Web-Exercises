@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch</title>
+</head>
+<body>
+
+    <script>
+
+        var dollars = 100;
+        var currency = "EUR";
+        var total;
+
+/*        if (currency == "MXN")  {
+            total == dollars * 19.26
+        }
+        else if (currency == "CNY") {
+            total = dollars * 1.5
+        }
+        else if (currency == "EUR") {
+            total == dollars * 1.11
+        }*/
+
+        switch (currency)   {
+            case "MXN":
+                total = dollars * 19.26;
+                break;
+
+            case "CNY":
+                total = dollars * 1.5;
+                break;
+
+            case "EUR":
+                total = dollars * 1.11;
+                break;
+
+
+        }
+        console.log(total);
+    </script>
+</body>
+</html>
