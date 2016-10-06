@@ -7,13 +7,14 @@
         var firstGrade = 70;
         var secondGrade = 80;
         var thirdGrade = 95;
+        var awesome = 80;
 
         var average = (firstGrade + secondGrade + thirdGrade) / 3
 
-        if (average < 80){
+        if (average < awesome){
             console.log("You need to practice more");
         }
-        else if (average > 80) {
+        else if (average > awesome){
             console.log("You are awesome!");
         }
 
@@ -25,13 +26,42 @@
             var coinFlip = Math.floor(Math.random() * 2);
 
             if (coinFlip == 0){
-                console.log("Buy a Raptor");
+                console.log("Buy a House");
             }
 
             else if (coinFlip == 1){
-                console.log("Buy a Miata");
+                console.log("Buy a Car");
             }
         </script>
+
+    <script>
+        var ryan = 250;
+        var cameron = 180;
+        var george = 320;
+        var percent = .8;
+        var ryanDiscount = ryan;
+        var cameronDiscount = cameron;
+        var georgeDiscount = george;
+
+
+        if (ryan > 200) {
+           ryanDiscount = ryan * percent;
+        }
+
+        if (ryan > 200) {
+            cameronDiscount = cameron * percent;
+        }
+
+        if (ryan > 200) {
+            georgeDiscount = george * percent;
+        }
+
+        console.log("Ryan bought $" + ryan + ", he will pay $" + ryanDiscount)
+        console.log("Cameron bought $" + cameron + ", he will pay $" + cameronDiscount)
+        console.log("George bought $" + george + ", he will pay $" + georgeDiscount)
+
+
+    </script>
 </head>
 <body>
 
