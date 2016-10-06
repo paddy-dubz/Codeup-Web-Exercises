@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        .jumbotron  {
+            background-image: url(http://i.imgur.com/gKcOC.jpg);
+            background-position: 0% 25%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: black 0.3em 0.3em 0.3em;
+        }
+
+        .img-center {
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: white;
+        }
+    </style>
+</head>
+<body background="https://s-media-cache-ak0.pinimg.com/564x/63/bc/cb/63bccb6228be26e3c02bf5614e97bfb4.jpg">
+<div class="col-md-12">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Worst Little Pizzaria</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Order Online<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Menu</a></li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="container">
+
+
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h1>Tuna & Ravioli</h1>
+                <p>Ruthlessly butchered tuna & Nana's famous 17 Cheese ravioli adorn this unorthodox sensation!</p>
+                <p><a href="gross.html" class="btn btn-primary btn-lg">Order Now</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <form method="POST" action="http://requestb.in/1myz18d1" class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Create your own!</legend>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="size">Size</label>
+                        <div class="col-md-4">
+                            <select id="size" name="size" class="form-control">
+                                <option value="small">Small (14")</option>
+                                <option value="medium">Medium (18")</option>
+                                <option value="large">Large (22")</option>
+                                <option value="xlarge">X-Large (26")</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="crust">Crust type</label>
+                        <div class="col-md-4">
+                            <select id="crust" name="crust" class="form-control">
+                                <option value="reg">Regular</option>
+                                <option value="thin">Thin</option>
+                                <option value="stuffed">Cheese Stuffed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Checkboxes -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="toppings">Toppings</label>
+                        <div class="col-md-4">
+                            <div class="checkbox">
+                                <label for="checkboxes-0">
+                                    <input type="checkbox" name="toppings" id="checkboxes-0" value="xcheese">
+                                    Extra Cheese
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-1">
+                                    <input type="checkbox" name="toppings" id="checkboxes-1" value="pep">
+                                    Pepperonis
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-2">
+                                    <input type="checkbox" name="toppings" id="checkboxes-2" value="sausage">
+                                    Sausage
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-3">
+                                    <input type="checkbox" name="toppings" id="checkboxes-3" value="bacon">
+                                    Bacon
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-4">
+                                    <input type="checkbox" name="toppings" id="checkboxes-4" value="ham">
+                                    Ham
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-5">
+                                    <input type="checkbox" name="toppings" id="checkboxes-5" value="olives">
+                                    Olives
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-6">
+                                    <input type="checkbox" name="toppings" id="checkboxes-6" value="mushrooms">
+                                    Mushrooms
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-7">
+                                    <input type="checkbox" name="toppings" id="checkboxes-7" value="redonions">
+                                    Red Onions
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkboxes-8">
+                                    <input type="checkbox" name="toppings" id="checkboxes-8" value="anchovies">
+                                    Anchovies
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary">Order</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+
+    <div class="row">
+        <div class="col-md-2 col-sm-4 text-center">
+            <img class="img-circle img-responsive img-center" src="http://previewcf.turbosquid.com/Preview/2014/05/21__11_06_34/AnchovyR1s.jpge7bcddcc-7415-44ee-882e-543915753d3eOriginal.jpg" alt="">
+            <h3>Anchovy & Peppermint
+            </h3>
+            <p>Perfect pizza to piss off your hungry coworkers or friends. Be the scourge of the home or office today!</p>
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Order</button>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center">
+            <img class="img-circle img-responsive img-center" src="http://wholesalemeats.com.au/wp-content/uploads/2012/04/Wholesale-Meats-1024x1024.jpg" alt="">
+            <h3>Heartattacky Special
+            </h3>
+            <p>Cheese Stuffed Crust pizza piled high with double doses of every meat we offer!</p>
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Order</button>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center">
+            <img class="img-circle img-responsive img-center" src="https://pantograph0.goldbely.com/uploads/product/main_image/14981/100-medium-buffalo-wings.cdd713bb74b7adc7602be2f55f293a35.jpg" alt="">
+            <h3>Hot Wing Punishment
+            </h3>
+            <p>Chicken marinated in tongue-scorching buffalo sauce on a thin crust drizzled in ranch! </p>
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Order</button>
+        </div>
+        <div class="col-md-2 col-sm-4 text-center">
+            <img class="img-circle img-responsive img-center" src="http://b.vimeocdn.com/ps/247/875/2478757_300.jpg" alt="">
+            <h3>Perfectly Normal Pizza
+            </h3>
+            <p>Nothing out of the ordinary or weird about this one, nosiree! Completely 100% normal.</p>
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Order</button>
+        </div>
+        </div>
+
+</div>
+</body>
+</html>
