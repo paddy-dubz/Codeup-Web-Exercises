@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <script>
+ <!--   <script>&lt;!&ndash;
 
         var dollars = 100;
         var currency = "EUR";
@@ -38,6 +38,87 @@
 
         }
         console.log(total);
-    </script>
+    </script>&ndash;&gt;-->
+        <script>
+            'use strict';
+
+            var luckyNumber = Math.floor(Math.random()* 6);
+            var receipt = 60;
+
+            switch (luckyNumber)    {
+                case 0:
+                    console.log("You get nothing off your total purchase, your total is " + (receipt));
+                    break;
+
+                case 1:
+                    receipt = receipt - receipt * .1;
+                    console.log("You get 10% off your total purchase, your new total is " + (receipt));
+                    break;
+
+                case 2:
+                    receipt = receipt - receipt * .25;
+                    console.log("You get 25% off your total purchase, your new total is " + (receipt));
+                    break;
+
+                case 3:
+                    receipt = receipt - receipt * .35;
+                    console.log("You get 35% off your total purchase, your new total is " + (receipt));
+                    break;
+
+                case 4:
+                    receipt = receipt - receipt * .50;
+                    console.log("You get 50% off your total purchase, your new total is " + (receipt));
+                    break;
+
+                case 5:
+                    receipt = receipt - receipt;
+                    console.log("You get 100% off your total purchase, your new total is " + (receipt));
+                    break;
+
+            }
+        </script>
+
+        <script>
+            var monthsOfTheYear = Math.floor(Math.random()* 13);
+
+            switch (monthsOfTheYear)    {
+                case 1:
+                    console.log("January");
+                    break;
+                case 2:
+                    console.log("Feburary");
+                    break;
+                case 3:
+                    console.log("March");
+                    break;
+                case 4:
+                    console.log("April");
+                    break;
+                case 5:
+                    console.log("May");
+                    break;
+                case 6:
+                    console.log("June");
+                    break;
+                case 7:
+                    console.log("July");
+                    break;
+                case 8:
+                    console.log("August");
+                    break;
+                case 9:
+                    console.log("September");
+                    break;
+                case 10:
+                    console.log("October");
+                    break;
+                case 11:
+                    console.log("November");
+                    break;
+                case 12:
+                    console.log("December");
+                    break;
+            }
+        </script>
 </body>
 </html>
