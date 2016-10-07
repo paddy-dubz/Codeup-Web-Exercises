@@ -39,7 +39,7 @@
         }
         console.log(total);
     </script>&ndash;&gt;-->
-        <script>
+<!--        <script>
             'use strict';
 
             var luckyNumber = Math.floor(Math.random()* 6);
@@ -51,27 +51,27 @@
                     break;
 
                 case 1:
-                    receipt = receipt - receipt * .1;
+                    receipt = receipt * .9;
                     console.log("You get 10% off your total purchase, your new total is " + (receipt));
                     break;
 
                 case 2:
-                    receipt = receipt - receipt * .25;
+                    receipt = receipt * .75;
                     console.log("You get 25% off your total purchase, your new total is " + (receipt));
                     break;
 
                 case 3:
-                    receipt = receipt - receipt * .35;
+                    receipt = receipt * .65;
                     console.log("You get 35% off your total purchase, your new total is " + (receipt));
                     break;
 
                 case 4:
-                    receipt = receipt - receipt * .50;
+                    receipt = receipt * .50;
                     console.log("You get 50% off your total purchase, your new total is " + (receipt));
                     break;
 
                 case 5:
-                    receipt = receipt - receipt;
+                    receipt = 0;
                     console.log("You get 100% off your total purchase, your new total is " + (receipt));
                     break;
 
@@ -79,9 +79,10 @@
         </script>
 
         <script>
-            var monthsOfTheYear = Math.floor(Math.random()* 13);
+            var monthsOfTheYear = Math.floor(Math.random()* 12 + 1);
 
             switch (monthsOfTheYear)    {
+
                 case 1:
                     console.log("January");
                     break;
@@ -120,5 +121,69 @@
                     break;
             }
         </script>
+ <script>
+            var i = 1; //counter
+
+            // are we done?
+            while (/*condition return true*/ i < 21)    { //start of block
+                console.log(i);
+                i += 2; //increment
+            } //end of block, back to condition
+
+            console.log("We're Done!");
+ </script>
+
+<script>
+    var targetAmount = 100;
+    var amountSaved = 0;
+    var j = 0;
+
+    while (amountSaved < targetAmount)  {
+        amountSaved += Math.floor(Math.random() * 10) + 1;
+        j++;
+    }
+    console.log("I saved " + amountSaved + " there were " + j + " repetitions");
+</script>
+
+<script>
+    var targetAmount = 100;
+    var amountSaved = 102;
+    var j = 0;
+
+    do {
+        amountSaved += Math.floor(Math.random() * 10) + 1;
+        j++;
+    }
+
+    while (amountSaved < targetAmount);
+
+    console.log("I saved " + amountSaved + " there were " + j + " repetitions");
+</script>-->
+
+<script>
+    var allCones = Math.floor(Math.random() * 50) + 50; //amount of cones
+
+    do {
+        var cones = Math.floor(Math.random() * 5) + 1; //number of cones sold
+        allCones = allCones - cones;
+        console.log("I sold " + cones + " cones.");
+        if (cones > allCones)
+        {console.log("I cannot sell you " + cones + ", I only have " + allCones + " left.")
+        }
+
+    }
+
+    while (allCones > 0);
+    console.log("I'm all done bitches!")
+</script>
+
+<script>
+    var x = 1;
+
+    while (x <= 65536)  {
+        x *= 2;
+        console.log( "while loop iteration # " + x);
+    }
+</script>
 </body>
 </html>
