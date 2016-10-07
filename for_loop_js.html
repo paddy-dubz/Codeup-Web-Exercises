@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Loop Exercise</title>
+</head>
+<body>
+<!--
+    <script>
+        "use strict";
+/*
+        var i = 1;
+        while(i <=10)   {
+            console.log(i);
+            i++;
+        }*/
+
+        //for loop
+        // for(initializer; condition; incrementer) {}
+
+        for (var i = 1; i <= 10; i++) {
+            console.log(i);
+
+        }
+
+
+    </script>-->
+
+<script>
+
+         for (var i = 1; i <= 10; i++)
+         {
+             if (i == 10) {
+                 var n = i.toString();
+                 var res = n.replace("10", "0");
+                 console.log(res.repeat(i));
+             }
+
+             else {
+                 var n = i.toString();
+                 console.log(n.repeat(i));
+             }
+         }
+
+
+
+
+</script>
+</body>
+</html>
