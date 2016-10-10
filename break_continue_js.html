@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Break and Continue</title>
+</head>
+<body>
+<!--<script>
+    var luckyNumber;
+    var customerCount = 0;
+
+    while (true)   {
+        luckyNumber = Math.floor(Math.random() * 5) + 1;
+
+        // searching for number 5
+        if (luckyNumber == 5)   {
+            break;
+        }
+        customerCount++;
+
+    }
+
+    console.log(customerCount);
+</script>
+
+<script>
+
+    // filtering the results
+    var i;
+    for (i = 0; i < 10; i++)    {
+        receipt = Math.floor(Math.random() * 300);
+        if (receipt < 200)  {
+            continue;
+        }
+        console.log(receipt); // only want to show amounts that will get a discount
+
+    }
+</script>-->
+
+<!--/*    var number;
+
+    while (true)    {
+        number = Math.floor(Math.random() * 50) + 1;
+
+        if  ((number % 2) === 0)   {
+            break;
+        }
+        number++;
+
+    }
+    console.log(number)*/-->
+
+<script>
+    'use strict';
+
+    var randomNumber = 2 * Math.floor(Math.random() * 25) + 1;
+            console.log(randomNumber + " is your random odd number");
+
+
+    for (var i = 1; i <= 50; i++) {
+        if (i % 2 == 0) {
+            continue;
+        }
+
+        if (i == randomNumber)  {
+            console.log("Skipping " + randomNumber + "!");
+        }
+        else {
+            console.log(i + " is an odd number");
+        }
+    }
+
+</script>
+
+
+</body>
+</html>
