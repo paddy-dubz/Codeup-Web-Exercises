@@ -15,9 +15,9 @@
         console.log(names[i])
     }
 
-    // element is the name
+    // element is the name, planet, shape, etc.
     // index is the iterator (where it is in the array)
-    //array is the array itself
+    // array is the array itself
 /*    var entry = function (element, index, array) {
         console.log('The person at ' + index + ' is ' + element)
     };

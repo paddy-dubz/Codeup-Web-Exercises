@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+/*        function titleCase(names) {
+
+            for(var i = 0; i < names.length; i++){
+                names[i] = names[i].split('');
+                names[i][0] = names[i][0].toUpperCase();
+                names[i] = names[i].join('');
+            }
+            return names.join(', ');
+        }
+        console.log(titleCase(names));*/
+
+        var names = ['john', 'paul', 'ringo', 'george', 'pete'];
+
+        function upperCase(names) {
+            return names.map(function(word) {
+                return word[0].toUpperCase()+word.slice(1);
+            });
+        }
+        console.log(upperCase(names));
+
+
+
+
+                var numbers = [1,2,3,4,5,6,7,8,9,10];
+                function addNumbers() {
+                    var sum = 0;
+
+                    numbers.forEach(function (element) {
+                        sum += element;
+                    });
+                    return sum;
+                }
+                console.log(addNumbers());
+
+
+
+                        console.log("<ul>");
+                        for (var i =0; i < names.length; i++)  {
+                            console.log("<li>" + names[i] + "</li>");
+                        }
+                        console.log("</ul>");
+
+    </script>
+</body>
+</html>

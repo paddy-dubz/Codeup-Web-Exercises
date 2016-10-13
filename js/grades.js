@@ -23,3 +23,27 @@ if (average3Grades() >= 80) {
 } else {
     alert('You need to practice more.');
 }
+
+
+function genericGradesAverage() {
+    var gradeSum = 0;
+    var gradeAmount = 0;
+    do {
+        var grade = parseInt(prompt("Enter grade"));
+        gradeSum = gradeSum + grade;
+        gradeAmount++;
+        var confirming = confirm("Would you like to add another grade?");
+        console.log(grade);
+        console.log(gradeSum);
+    }
+    while(confirming);
+    return gradeSum / gradeAmount;
+}
+
+if (genericGradesAverage() >= 80) {
+    alert('You are awesome!');
+} else {
+    alert('You need to practice more.');
+}
+/*
+alert(genericGradesAverage());*/

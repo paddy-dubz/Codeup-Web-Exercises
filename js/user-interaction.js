@@ -11,7 +11,7 @@ while(true){
     }
 }
     var pizza = prompt('Do you like pizza? (yes or no)');
-        if (pizza == "yes")  {
+        if (pizza === "yes")  {
             alert('That is great ' + name + ', we do too!');
         }   else    {
             alert('That is too bad ' + name + ', you are an uncultured swine.');
