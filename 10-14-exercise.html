@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10/14/16</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    /*
+     * How many times a lucky number is repeated for every 100 customers?
+     */
+
+    function luckyNumber() {
+        return Math.floor(Math.random()* 6);
+    }
+
+    var num = [];
+
+    for (var count = 0; count < 6; count++) {
+        num[count] = 0;
+    }
+
+    for (var i = 0; i < 100; i++) {
+        var index = luckyNumber();
+        num[index] += 1;
+    }
+
+    // The output should be something like
+
+    // 0 appeared 10 times
+    // 1 appeared 20 times
+    // 2 appeared 15 times
+    // 3 appeared 35 times
+    // 4 appeared 4 times
+    // 5 appeared 16 times
+
+    // The total should be 100
+
+    for (var count = 0; count < 6; count++) {
+        console.log(count + " appeared " + num[count] + " times.");
+    }
+
+</script>
+</body>
+</html>
