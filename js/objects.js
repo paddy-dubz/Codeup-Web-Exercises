@@ -9,7 +9,7 @@
 
     // TODO: Create firstName and lastName properties in your person object; assign your name to them
 
-    person.firstName = "Patrick";
+    person.firstName = "Nina";
     person.lastName = "Woolard";
 
     // TODO: Add a sayHello method to the person object that

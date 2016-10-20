@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Google Maps API</title>
+<head>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map-canvas {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<!-- div to hold map -->
+<div id="map-canvas"></div>
+
+<!-- Load the Google Maps API [DON'T FORGET TO USE A KEY] -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnou4r4UdSGoB_uXyqUeAUO2BPkqExjKc"></script>
+
+<!-- Script to show address on map -->
+<script type="text/javascript">
+    (function() {
+        "use strict";
+
+        // Set our map options
+        var mapOptions = {
+            // Set the zoom level
+            zoom: 19,
+
+            // This sets the center of the map at our location
+            center: {
+                lat:  29.790105,
+                lng: -98.730035
+            }
+        };
+
+        var address = "448 S Main St, Boerne, TX 78006";
+
+        // Init geocoder object
+        var geocoder = new google.maps.Geocoder();
+
+        // Geocode our address
+        geocoder.geocode({ "address": address }, function(results, status) {
+
+            // Check for a successful result
+            if (status == google.maps.GeocoderStatus.OK) {
+
+                // Recenter the map over the address
+                map.setCenter(results[0].geometry.location);
+            } else {
+
+                // Show an error message with the status if our request fails
+                alert("Geocoding was not successful - STATUS: " + status);
+            }
+            var cibolo = { lat: 29.790105, lng: -98.730035 };
+
+            var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<h1 id="firstHeading" class="firstHeading">Cibolo Creek Brewing Company</h1>'+
+                    '<div id="bodyContent">'+
+                    '<p><b>Cibolo Creek Brewing Co.</b>, established in 2016, is the best ' +
+                    'place in Boerne to grab a beer and a burger. '+
+                    'Be sure to try their India Pale Ale, it is my favorite! '+
+                    '</p>'+
+                    '<p>Visit them today, <a href="http://www.cibolocreekbrewing.com">'+
+                    'http://www.cibolocreekbrewing.com</a></p>'+
+                    '</div>'+
+                    '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            // Add the marker to our existing map
+            var marker = new google.maps.Marker({
+                position: cibolo,
+                map: map,
+                animation: google.maps.Animation.DROP
+            });
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+
+
+
+        });
+
+
+
+        // Render the map
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    })();
+</script>
+</body>
+</html>
