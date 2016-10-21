@@ -9,10 +9,58 @@
         </head>
 <body>
 
+<h1 class="header" id="header">JQuery Exercises</h1>
+<div class="container" id="container">
+    <p class="codeup" id="body">This is a paragraph with text, good text, some say the very best text.We always have the best text. What follows is a list.</p>
+        <ul class="list" id="list">
+            <li class="codeup" id="item1">This is the first list item.</li>
+            <li class="codeup" id="item2">This is the second list item.</li>
+            <li class="codeup" id="item3">This is the third list item.</li>
+        </ul>
+
+</div>
+
 </body>
 <script>
     $(document).ready(function() {
         alert( 'The DOM has finished loading!' );
     });
+
+    $(document).ready(function() {
+        $('li').css('font-size', '20px');
+    });
+
+    $(document).ready(function() {
+        $('h1, p, li').css('background-color', '#FF0');
+    });
+
+//    $(document).ready(function() {
+//        var contents = $('h1').html();
+//        alert(contents);
+//    });
+
+    $(document).ready(function() {
+        $('h1').click(function() {
+            $('h1').css('background-color', '#F00');
+        });
+    });
+
+    $(document).ready(function() {
+        $('p').dblclick(function() {
+            $('p').css('font-size', '18px');
+        });
+    });
+
+    $(document).ready(function() {
+        $('li').hover(
+                function() {
+                    $(this).css('color', '#F00');
+                },
+                function() {
+                    $(this).css('color', '#FFF');
+                }
+        );
+    });
+
 </script>
 </html>
