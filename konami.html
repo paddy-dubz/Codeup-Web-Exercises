@@ -3,15 +3,16 @@
 <head>
     <title>Konami Code</title>
 
-    <script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 
 </head>
 <body>
 <h1>Konami Code</h1>
 
 <script>
+    "use strict";
 
-    $(document).keyup(function(event){
+    $(document).keydown(function(event){
         console.log(event.keyCode);
     });
 
@@ -20,7 +21,6 @@
     $(document).keydown(function(event){
         if(event.keyCode === konami_keys[konami_index++]){
             if(konami_index === konami_keys.length){
-                $(document).unbind('keydown', arguments.callee);
                 alert( 'You have added 30 lives!' );
             }
         }
