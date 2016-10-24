@@ -24,19 +24,27 @@
 
         $(document).ready(function() {
             $('dt').click(function() {
-                $(this).next().toggle();
+                $(this).next().fadeToggle();
             });
         });
 
-//        slideToggle
+        $(document).ready(function() {
+            $('h3').click(function() {
+                $(this).next().fadeToggle();
+            });
+        });
+
+//        $(document).ready(function() {
+//            $('li').click(function() {
+//                $(this).parent().hide();
+//            });
+//        });
 
         $(document).ready(function() {
             $('li').click(function() {
-                $(this).parent().hide();
+                $(this).parent().fadeOut();
             });
         });
-
-//        fadeOut
 
         $(document).ready(function() {
             $('ul').each(function() {
