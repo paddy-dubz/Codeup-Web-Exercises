@@ -15,18 +15,35 @@
 
         "use strict";
 
-        $(document).ready(function() {
-            $('#toggle').click(function(event) {
-                event.preventDefault();
-                $('dd').toggleClass('invisible');
-            });
-        });
+//        $(document).ready(function() {
+//            $('#toggle').click(function(event) {
+//                event.preventDefault();
+//                $('dd').toggleClass('invisible');
+//            });
+//        });
 
         $(document).ready(function() {
             $('dt').click(function() {
-                $(this).next().slideToggle();
+                $(this).next().toggle();
             });
         });
+
+//        slideToggle
+
+        $(document).ready(function() {
+            $('li').click(function() {
+                $(this).parent().hide();
+            });
+        });
+
+//        fadeOut
+
+        $(document).ready(function() {
+            $('ul').each(function() {
+                $(this).children().first().css('font-weight', 'bold');
+            });
+        });
+
 
     </script>
 
@@ -70,7 +87,33 @@
         <dt>What do I need to know about driving off road in national parks?</dt>
         <dd class="invisible">Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.</dd>
     </dl>
-    <a href="#" id="toggle">Click to show or hide FAQ Answers</a>
+    <!--<a href="#" id="toggle">Click to show or hide FAQ Answers</a>-->
+
+    <hr>
+    <h3>Big Bend</h3>
+    <ul>
+        <li>It is the largest protected area of Chihuahuan Desert topography and ecology in the United States.</li>
+        <li>It contains more than 1,200 species of plants, more than 450 species of birds, 56 species of reptiles, and 75 species of mammals.</li>
+        <li>The national park covers 801,163 acres.</li>
+        <li>Founded on June 12, 1944</li>
+    </ul>
+
+    <h3>Fort Davis</h3>
+    <ul>
+        <li>Located within the Davis Mountains of West Texas.</li>
+        <li>Established in October 1854 along the Limpia Creek at Painted Comanche Camp by Bvt. Maj. Gen. Persifor Frazer Smith.</li>
+        <li>Fort Davis was named after Secretary of War Jefferson Davis.</li>
+        <li>Fort Davis was strategically located to protect emigrants, mail coaches, and freight wagons on the trans-Pecos portion of the San Antonio-El Paso Road and the Chihuahua Trail.</li>
+    </ul>
+
+    <h3>Guadalupe Mountains</h3>
+    <ul>
+        <li>Has the tallest mountain in Texas, Guadalupe Peak.</li>
+        <li>Has 86 miles of hiking and biking trails.</li>
+        <li>Located in the vast Chihuahuan Desert of western Texas.</li>
+        <li>Is known for its bright-white Salt Basin Dunes, wildlife-rich grassland and fossilized reef mountains.</li>
+    </ul>
+
 </div>
 
 </body>
