@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+
+        .invisible {
+            display: none;
+        }
+
+    </style>
+
+    <script src="js/jquery.js"></script>
+    <script>
+
+        "use strict";
+
+        $(document).ready(function() {
+            $('#toggle').click(function(event) {
+                event.preventDefault();
+                $('dd').toggleClass('invisible');
+            });
+        });
+
+        $(document).ready(function() {
+            $('dt').click(function() {
+                $(this).next().slideToggle();
+            });
+        });
+
+    </script>
+
+    <title>FAQ Page</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>National Park FAQ</h1>
+
+    <hr>
+
+    <dl>
+        <dt>Who is the director of the National Park Service?</dt>
+        <dd class="invisible">Jonathan B. Jarvis</dd>
+        <br>
+        <dt>What government agency oversees the National Park Service?</dt>
+        <dd class="invisible">The National Park Service is a bureau of the Department of the Interior. Directly overseeing its operation is the Department's Assistant Secretary for Fish and Wildlife and Parks.</dd>
+        <br>
+        <dt>How old is the national park system?</dt>
+        <dd class="invisible">The National Park Service was created by an Act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an Act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park. View the national park system Timeline.</dd>
+        <br>
+        <dt>What is the origin of the National Park Service arrowhead?</dt>
+        <dd class="invisible">The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The Sequoia tree and bison represent vegetation and wildlife, the mountains and water represent scenic and recreational values, and the arrowhead represents historical and archeological values. It was registered Feb. 9, 1965, by the U.S. Patent Office as the official emblem of the NPS. Further information on the Arrowhead, including definitions, uses, powers to revoke uses, and penalties for wrongful use can be found in Title 36 Code of Federal Regulations 11.1-4.</dd>
+        <br>
+        <dt>How many areas are there in the national park system?</dt>
+        <dd class="invisible">The national park system comprises 401 areas covering more than 84 million acres in every state, the District of Columbia, American Samoa, Guam, Puerto Rico, and the Virgin Islands. These areas include national parks, monuments, battlefields, military parks, historical parks, historic sites, lakeshores, seashores, recreation areas, scenic rivers and trails, and the White House. Learn more about national park designations. See the complete list of National Park Service sites and affiliated areas by type and number.</dd>
+        <br>
+        <dt>What is the largest national park site?</dt>
+        <dd class="invisible">Wrangell-St. Elias National Park and Preserve, AK, at 13.2 million acres</dd>
+        <br>
+        <dt>What is the smallest national park site?</dt>
+        <dd class="invisible">Thaddeus Kosciuszko National Memorial, PA, at 0.02 acres</dd>
+        <br>
+        <dt>How do I obtain a park pass?</dt>
+        <dd class="invisible">Visitors can obtain park passes by visiting their nearest park site. Most sites have passes available, however it is recommended to call a park prior to your visit. Learn more about the America the Beautiful - National Parks and Federal Recreation Lands Pass.</dd>
+        <br>
+        <dt>How do I make reservations for camping/lodging in national parks?</dt>
+        <dd class="invisible">For campground reservations go here. Not all parks participate in this service, many campgrounds are first come, first served. For more information on specific camping and lodging services offered at the park(s) of your interest, please check their homepage by using our search feature.</dd>
+        <br>
+        <dt>What do I need to know about driving off road in national parks?</dt>
+        <dd class="invisible">Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.</dd>
+    </dl>
+    <a href="#" id="toggle">Click to show or hide FAQ Answers</a>
+</div>
+
+</body>
+</html>
