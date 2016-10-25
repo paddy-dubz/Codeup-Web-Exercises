@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Ajax Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <style>
+        #container  {
+            margin-left: 50px;
+        }
+
+        #posts  {
+            width: 75%;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="img/poo.png">
+            </a>
+        </div>
+        <h1>Another Worthless Blog</h1>
+
+    </div>
+</nav>
+<div id="container">
+
+    <div id="posts"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    (function(){
+        $.get('data/blog.json')
+            .fail(function(error){
+                console.log(error);
+            }).done(function(data){
+                var content = '';
+                $.each(data, function(index, element){
+                    content += '<div class="well"><h2>' + element.title + '</h2><h4>' + element.date + '</h4><h4>' + element.categories.join(', ') + '</h4><p>' + element.content + '</p></div>';
+                });
+                $('#posts').html(content);
+            });
+
+    })();
+</script>
+</body>
+</html>

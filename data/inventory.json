@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Hammer",
+        "quantity": 25,
+        "categories": [
+            "Tool"
+        ],
+        "price": 20
+    }, {
+        "title": "Drill",
+        "quantity": 5,
+        "categories": [
+            "Tool",
+            "Powered"
+        ],
+        "price": 100
+    }, {
+        "title": "Mower",
+        "quantity": 5,
+        "categories": [
+            "Tool",
+            "Gas",
+            "Outdoor"
+        ],
+        "price": 200
+    }, {
+        "title": "Screwdrivers",
+        "quantity": 25,
+        "categories": [
+            "Tool"
+        ],
+        "price": 10
+    },
+    {
+        "title": "Chainsaw",
+        "quantity": 12,
+        "categories": [
+            "Tool",
+            "Gas",
+            "Outdoor"
+        ],
+        "price": 150
+    }, {
+        "title": "Hedge Clipper",
+        "quantity": 22,
+        "categories": [
+            "Tool",
+            "Outdoor"
+        ],
+        "price": 20
+    }, {
+        "title": "Weedeater",
+        "quantity": 8,
+        "categories": [
+            "Tool",
+            "Powered",
+            "Outdoor"
+        ],
+        "price": 100
+    }
+]
