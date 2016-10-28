@@ -7,18 +7,27 @@
 
     <style>
 
+        body    {
+            background: no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
         #container {
             margin: auto;
             width: 75%;
             height: 100%;
             max-width: 1000px;
-            background-color: lightskyblue;
+            border-radius: 15px;
         }
 
         .row {
             text-align: center;
             padding: 0 10px 0 10px;
             margin: auto;
+
         }
 
         .column {
@@ -27,17 +36,24 @@
             border: 1px solid black;
             background-color: whitesmoke;
             margin: auto;
+            border-radius: 15px;
+            opacity: 0.75;
         }
 
         #map-canvas {
             width: 97.5%;
             margin: 10px auto;
             height: 350px;
+            border-radius: 15px;
+
         }
 
         h1,
         h2  {
             margin: 15px;
+            padding-top: 10px;
+            color: white;
+
         }
 
         .temp {
@@ -50,7 +66,7 @@
 <body>
 
 <div id="container">
-    <h1>Weather Application</h1>
+    <h1></h1>
 
     <h2 class="city"></h2>
 
@@ -84,11 +100,12 @@
                 draggable: true,
                 animation: google.maps.Animation.DROP
             });
-            marker.addListener('dragend',function(event) {
+            marker.addListener('dragend',function() {
                 weatherMan();
             });
-        } googleMaps();
+        }
 
+        googleMaps();
 
         function weatherMan() {
             $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
@@ -97,6 +114,8 @@
                 lon: marker.getPosition().lng(),
                 units: "imperial",
                 cnt: 3
+            }).fail(function(){
+                alert("YOU BROKE IT!");
             }).done(function (data) {
                 console.log(data);
                 data.list.forEach(function (day, index) {
@@ -104,9 +123,29 @@
                     var icon = '<img src="http://openweathermap.org/img/w/' + day.weather[0].icon + '.png">';
                     $('#day' + index).html('<p class="temp">' + Math.round(day.temp.max) + "&deg;" + '/ ' + Math.round(day.temp.min) + "&deg;" + '</p><p>' + icon + '</p><p><b>Clouds:</b> ' + day.weather[0].description + '</p><p><b>Humidity:</b> ' + day.humidity + ' %' + '</p><p><b>Wind:</b> ' + day.speed + ' mph' + '</p><p><b>Pressure:</b> ' + day.pressure + '</p>');
                 });
-            });
-        } weatherMan();
 
+                var keyword = data.city.name;
+
+                $(document).ready(function(){
+
+                    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+                            {
+                                tags: keyword + " skyline",
+                                tagmode: "any",
+                                format: "json"
+                            },
+                            function(data) {
+                                var rnd = Math.floor(Math.random() * data.items.length);
+
+                                var image_src = data.items[rnd]['media']['m'].replace("_m", "_b");
+
+                                $('body').css('background-image', "url('" + image_src + "')");
+                            });
+                });
+            });
+        }
+
+        weatherMan();
     })();
 </script>
 
